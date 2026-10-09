@@ -1,0 +1,30 @@
+{
+  "runs": [
+    {
+      "requested_device": "cpu",
+      "batch_size_s": 32,
+      "repeat": 1,
+      "returncode": 1,
+      "run_dir": "/home/zhou/Desktop/speech_demo/评测结果/run_p6iz9u11/case_001",
+      "valid_for_comparison": false
+    },
+    {
+      "requested_device": "cpu",
+      "batch_size_s": 64,
+      "repeat": 1,
+      "returncode": 1,
+      "run_dir": "/home/zhou/Desktop/speech_demo/评测结果/run_p6iz9u11/case_002",
+      "valid_for_comparison": false
+    },
+    {
+      "requested_device": "cpu",
+      "batch_size_s": 256,
+      "repeat": 1,
+      "returncode": 1,
+      "run_dir": "/home/zhou/Desktop/speech_demo/评测结果/run_p6iz9u11/case_003",
+      "valid_for_comparison": false
+    }
+  ],
+  "ranked_configurations": [],
+  "capacity_plans": []
+}

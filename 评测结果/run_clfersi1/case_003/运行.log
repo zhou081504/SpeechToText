@@ -1,0 +1,43 @@
+2026-09-28 20:12:16,204 [INFO] download models from model hub: ms
+2026-09-28 20:12:17,255 | INFO    | modelscope_hub.download | Downloading 20 files from iic/SenseVoiceSmall@master
+找到 46 个文件
+使用设备：cpu
+模型 batch_size_s：300 秒
+正在加载模型……
+funasr version: 1.4.14.
+Check update of funasr, and it would cost few times. You may disable it by set `disable_update=True` in AutoModel
+New version is available: 1.4.16.
+Please use the command "pip install -U funasr" to upgrade.
+Downloading:   0%|          | 0/20 [00:00<?, ?file/s]Downloading: 100%|██████████| 20/20 [00:00<00:00, 40.27file/s]Downloading: 100%|██████████| 20/20 [00:00<00:00, 40.26file/s]
+2026-09-28 20:12:17,768 [WARNING] trust_remote_code: False
+2026-09-28 20:12:18,545 [INFO] Loading pretrained params from /home/zhou/.cache/modelscope/models/iic--SenseVoiceSmall/snapshots/master/model.pt
+2026-09-28 20:12:18,547 [INFO] ckpt: /home/zhou/.cache/modelscope/models/iic--SenseVoiceSmall/snapshots/master/model.pt
+2026-09-28 20:12:18,966 [INFO] scope_map: ['module.', 'None']
+2026-09-28 20:12:18,966 [INFO] excludes: None
+2026-09-28 20:12:19,019 [INFO] Loading ckpt: /home/zhou/.cache/modelscope/models/iic--SenseVoiceSmall/snapshots/master/model.pt, status: <All keys matched successfully>
+2026-09-28 20:12:19,052 [INFO] Building VAD model.
+2026-09-28 20:12:19,052 [INFO] download models from model hub: ms
+2026-09-28 20:12:19,821 | INFO    | modelscope_hub.download | Downloading 8 files from iic/speech_fsmn_vad_zh-cn-16k-common-pytorch@master
+Downloading:   0%|          | 0/8 [00:00<?, ?file/s]Downloading: 100%|██████████| 8/8 [00:00<00:00, 2629.86file/s]
+2026-09-28 20:12:19,832 [WARNING] trust_remote_code: False
+2026-09-28 20:12:19,835 [INFO] Loading pretrained params from /home/zhou/.cache/modelscope/models/iic--speech_fsmn_vad_zh-cn-16k-common-pytorch/snapshots/master/model.pt
+2026-09-28 20:12:19,835 [INFO] ckpt: /home/zhou/.cache/modelscope/models/iic--speech_fsmn_vad_zh-cn-16k-common-pytorch/snapshots/master/model.pt
+2026-09-28 20:12:19,837 [INFO] scope_map: ['module.', 'None']
+2026-09-28 20:12:19,837 [INFO] excludes: None
+2026-09-28 20:12:19,837 [INFO] Loading ckpt: /home/zhou/.cache/modelscope/models/iic--speech_fsmn_vad_zh-cn-16k-common-pytorch/snapshots/master/model.pt, status: <All keys matched successfully>
+模型加载完成，耗时 4.18 秒
+
+[1/46] 检查文件：一月/test.m4a
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.001', 'extract_feat': '0.008', 'forward': '0.044', 'batch_size': '1', 'rtf': '0.002'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 22.86it/s]rtf_avg: 0.002: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 22.81it/s]                                                                                          rtf_avg: 0.002: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 22.75it/s]
+  0%|[31m          [0m| 0/1 [00:00<?, ?it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s][A
+100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.49it/s][A
+{'load_data': '0.000', 'extract_feat': '0.006', 'forward': '0.669', 'batch_size': '1', 'rtf': '0.027'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.49it/s][A
+rtf_avg: 0.027: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.49it/s]                                                                                          [Artf_avg: 0.027: 100%|[34m██████████[0m| 1/1 [00:00<00:00,  1.49it/s]
+100%|[31m██████████[0m| 1/1 [00:00<00:00,  1.49it/s]rtf_avg: 0.024, time_speech:  27.668, time_escape: 0.670: 100%|[31m██████████[0m| 1/1 [00:00<00:00,  1.49it/s]rtf_avg: 0.024, time_speech:  27.668, time_escape: 0.670: 100%|[31m██████████[0m| 1/1 [00:00<00:00,  1.49it/s]
+完成：音频 27.7 秒，耗时 0.8 秒，35.39 倍实时
+
+[2/46] 检查文件：一月/test（另一个复件）.m4a
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s]{'load_data': '0.001', 'extract_feat': '0.005', 'forward': '0.035', 'batch_size': '1', 'rtf': '0.001'}, : 100%|[34m██████████[0m| 1/1 [00:00<00:00, 28.55it/s]rtf_avg: 0.001: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 28.45it/s]                                                                                          rtf_avg: 0.001: 100%|[34m██████████[0m| 1/1 [00:00<00:00, 28.38it/s]
+  0%|[31m          [0m| 0/1 [00:00<?, ?it/s]
+  0%|[34m          [0m| 0/1 [00:00<?, ?it/s][A

@@ -1,0 +1,52 @@
+2026-09-23 09:24:26,009 [INFO] download models from model hub: ms
+2026-09-23 09:24:41,444 [WARNING] Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')': /api/v1/models/iic/SenseVoiceSmall/repo/files?Revision=master&Recursive=True
+2026-09-23 09:24:42,448 [WARNING] Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')': /api/v1/models/iic/SenseVoiceSmall/repo/files?Revision=master&Recursive=True
+2026-09-23 09:24:44,452 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')': /api/v1/models/iic/SenseVoiceSmall/repo/files?Revision=master&Recursive=True
+2026-09-23 09:24:48,457 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')': /api/v1/models/iic/SenseVoiceSmall/repo/files?Revision=master&Recursive=True
+2026-09-23 09:24:56,462 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')': /api/v1/models/iic/SenseVoiceSmall/repo/files?Revision=master&Recursive=True
+2026-09-23 09:24:56,466 [WARNING] trust_remote_code: False
+找到 5 个文件
+使用设备：cpu
+模型 batch_size_s：64 秒
+正在加载模型……
+funasr version: 1.4.14.
+Check update of funasr, and it would cost few times. You may disable it by set `disable_update=True` in AutoModel
+Download: iic/SenseVoiceSmall failed!: [E1020] Connection failed: HTTPSConnectionPool(host='modelscope.cn', port=443): Max retries exceeded with url: /api/v1/models/iic/SenseVoiceSmall/repo/files?Revision=master&Recursive=True (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1016)')))
+
+程序失败：model 'iic/SenseVoiceSmall' is not registered.
+Registered model keys (51): BAT, BiCifParaformer, Branchformer, CAMPPlus, CTC, CTTransformer, CTTransformerStreaming, Conformer, ContextualParaformer, EBranchformer, EParaformer, ERes2NetV2, Emotion2vec, FsmnKWS, FsmnKWSConvert, FsmnKWSMT, FsmnKWSMTConvert, FsmnVADStreaming, FunASRNano, GLMASR, LCBNet, LLMASR, LLMASR2, LLMASR3, LLMASR4, LLMASRNAR, LLMASRNARPrompt, MOSS-Transcribe-Diarize, MonotonicAligner, OpenAIWhisperLIDModel, OpenAIWhisperModel, OpenMOSS-Team/MOSS-Transcribe-Diarize, Paraformer, ParaformerStreaming, Paraformer_v2_community, Qwen/Qwen3-ASR-0.6B, Qwen/Qwen3-ASR-1.7B, Qwen3ASR, SANM, SCAMA, SanmKWS, SanmKWSStreaming, SeacoParaformer, SenseVoiceSmall, SileroVad, Transducer, Transformer, UniASR, ZhipuAI/GLM-ASR-Nano-2512, iic/speech_eres2netv2_sv_zh-cn_16k-common, zai-org/GLM-ASR-Nano-2512
+Some modules may have failed to import during auto-registration. Set FUNASR_IMPORT_DEBUG=1 to print failures during import, or FUNASR_STRICT_IMPORT=1 to fail fast.
+Recorded import failures:
+  - funasr.bin._server_app: ImportError: funasr-server requires additional packages. Install with: pip install vllm fastapi uvicorn python-multipart
+  - funasr.bin.train: ImportError: cannot import name 'AutoModel' from partially initialized module 'funasr' (most likely due to a circular import) (/home/zhou/miniconda3/envs/speech/lib/python3.11/site-packages/funasr/__init__.py)
+  - funasr.bin.train_ds: ImportError: cannot import name 'AutoModel' from partially initialized module 'funasr' (most likely due to a circular import) (/home/zhou/miniconda3/envs/speech/lib/python3.11/site-packages/funasr/__init__.py)
+  - funasr.frontends.default: ModuleNotFoundError: No module named 'pytorch_wpe'
+  - funasr.frontends.fused: ModuleNotFoundError: No module named 'pytorch_wpe'
+  - funasr.frontends.s3prl: ModuleNotFoundError: No module named 'pytorch_wpe'
+  - funasr.frontends.utils.dnn_wpe: ModuleNotFoundError: No module named 'pytorch_wpe'
+  - funasr.frontends.utils.frontend: ModuleNotFoundError: No module named 'pytorch_wpe'
+  - funasr.models.fun_asr_nano.tools.whisper_mix_normalize: ModuleNotFoundError: No module named 'cn_tn'
+  - funasr.models.language_model.rnn.decoders: ModuleNotFoundError: No module named 'funasr.models.transformer.utils.scorers'
+  - funasr.models.language_model.seq_rnn_lm: ModuleNotFoundError: No module named 'funasr.train'
+  - funasr.models.language_model.transformer_lm: ModuleNotFoundError: No module named 'funasr.models.encoder'
+  - funasr.models.mfcca.e2e_asr_mfcca: ImportError: cannot import name 'ErrorCalculator' from 'funasr.metrics' (/home/zhou/miniconda3/envs/speech/lib/python3.11/site-packages/funasr/metrics/__init__.py)
+  - funasr.models.mfcca.mfcca_encoder: ModuleNotFoundError: No module named 'funasr.models.encoder'
+  - funasr.models.mossformer.e2e_ss: ModuleNotFoundError: No module named 'funasr.models.base_model'
+  - funasr.models.mossformer.mossformer: ModuleNotFoundError: No module named 'einops'
+  - funasr.models.mossformer.mossformer_encoder: ModuleNotFoundError: No module named 'einops'
+  - funasr.models.qwen_audio.model: ModuleNotFoundError: No module named 'whisper'
+  - funasr.models.sa_asr.beam_search_sa_asr: ImportError: cannot import name 'end_detect' from 'funasr.metrics' (/home/zhou/miniconda3/envs/speech/lib/python3.11/site-packages/funasr/metrics/__init__.py)
+  - funasr.models.sa_asr.e2e_sa_asr: ModuleNotFoundError: No module named 'funasr.layers'
+  - funasr.models.sense_voice.whisper_lib.triton_ops: RuntimeError: triton import failed; try `pip install --pre triton`
+  - funasr.models.sond.e2e_diar_sond: ModuleNotFoundError: No module named 'funasr.models.decoder'
+  - funasr.models.sond.encoder.conv_encoder: ModuleNotFoundError: No module named 'funasr.models.encoder'
+  - funasr.models.sond.encoder.fsmn_encoder: ModuleNotFoundError: No module named 'funasr.models.encoder'
+  - funasr.models.sond.encoder.resnet34_encoder: ModuleNotFoundError: No module named 'funasr.models.encoder'
+  - funasr.models.sond.encoder.self_attention_encoder: ImportError: cannot import name 'CTC' from 'funasr.models.ctc' (/home/zhou/miniconda3/envs/speech/lib/python3.11/site-packages/funasr/models/ctc/__init__.py)
+  - funasr.models.sond.sv_decoder: ModuleNotFoundError: No module named 'funasr.models.decoder'
+  - funasr.models.whisper.model: ModuleNotFoundError: No module named 'whisper'
+  - funasr.models.whisper_lid.decoder: ModuleNotFoundError: No module named 'whisper'
+  - funasr.models.whisper_lid.encoder: ModuleNotFoundError: No module named 'whisper'
+  - funasr.models.whisper_lid.eres2net.simple_avg: ModuleNotFoundError: No module named 'funasr.models.encoder'
+  - funasr.models.xvector.e2e_sv: ModuleNotFoundError: No module named 'funasr.layers'
+  - funasr.utils.speaker_utils: ModuleNotFoundError: No module named 'funasr.utils.modelscope_file'

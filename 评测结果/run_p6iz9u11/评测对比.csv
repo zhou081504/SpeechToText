@@ -1,0 +1,4 @@
+﻿requested_device,batch_size_s,repeat,returncode,run_dir,valid_for_comparison,notes
+cpu,32,1,1,/home/zhou/Desktop/speech_demo/评测结果/run_p6iz9u11/case_001,False,
+cpu,64,1,1,/home/zhou/Desktop/speech_demo/评测结果/run_p6iz9u11/case_002,False,
+cpu,256,1,1,/home/zhou/Desktop/speech_demo/评测结果/run_p6iz9u11/case_003,False,
